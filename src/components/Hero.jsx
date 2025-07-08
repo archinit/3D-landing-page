@@ -1,4 +1,5 @@
 import 'boxicons/css/boxicons.min.css';
+import Spline from '@splinetool/react-spline';
 
 export const Hero = () => {
     return <main className="flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh - 6rem)">
@@ -22,11 +23,19 @@ export const Hero = () => {
                 </p>
 
 
-                <div>
-                    <a href="#">
+                <div className='flex mt-12 gap-6 '>
+                    <a className='border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm
+                     font-semibold tracking-widest transition-all duration-300 hover:bg-[#1a1a1a]' href="#">
                         Documentation <i class='bx bx-link-external' ></i>
                     </a>
+                    <a className='border border-[#2a2a2a] py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm
+                     font-semibold tracking-widest transition-all duration-300 hover:bg-[#1a1a1a] bg-gray-300 text-black hover:text-white' href="#">
+                        Getting Started <i class='bx bx-link-external' ></i>
+                    </a>
                 </div>
+
+
         </div>
+                <Spline className='absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2%] h-full' scene="https://prod.spline.design/z8uHPbfDceBEGRIv/scene.splinecode" />
     </main>
 }
